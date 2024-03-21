@@ -1,0 +1,51 @@
+body {
+    font-family: "Lexend Tera", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: "200";
+    font-style: normal;
+    background-color:#f1fc9b;
+}
+h1 {
+    color:rgb(125, 146, 21);
+        font-family: "Rubik Mono One", monospace;
+        font-weight: "800";
+        font-style: italic;  
+}
+footer {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    border-top: 1px solid #000000;
+}
+header {
+    background-color:#59e038;
+    padding: 5px;
+}
+.short-text {
+    padding:1 rem;
+}
+.container {
+    display:flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-flow:row wrap;
+}
+.story {
+    background-color:#a7fb15;
+    margin: 2rem;
+    padding:2rem;
+    padding-bottom: 5rem;
+}
+.nav-links {
+    list-style-type: none;
+}
+.nav-links li {
+    display:inline;
+}
+.nav-links li:hover {
+    background-color: #e25a6c;
+}
+.flier {
+	pointer-events: none;
+}
+
