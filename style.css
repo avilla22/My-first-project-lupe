@@ -1,25 +1,44 @@
 body {
+    border: 2px solid; border-radius: 10px;
     font-family: "Lexend Tera", sans-serif;
     font-optical-sizing: auto;
-    font-weight: "200";
+    font-weight: "2";
     font-style: normal;
-    background-color:#f1fc9b;
+    margin:auto;
+    background-color:#a7fb158b;
+    align-content:center;
+    text-align: center;
 }
 h1 {
     color:rgb(125, 146, 21);
         font-family: "Rubik Mono One", monospace;
         font-weight: "800";
-        font-style: italic;  
+        font-style: italic; 
+        text-align: center; 
 }
+#box1{
+    
+    width: 250px 
+    font-size: 50px; 
+    background: color #000;;
+    margin: auto
+    
+
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
 footer {
     width: 80%;
     margin: auto;
     margin-top: 5%;
     border-top: 1px solid #000000;
+    text-align: center;
 }
 header {
-    background-color:#59e038;
-    padding: 5px;
+    border: 10px solid; border-radius: 90px;padding:5px
+    
 }
 .short-text {
     padding:1 rem;
@@ -29,18 +48,21 @@ header {
     align-content: center;
     justify-content: space-evenly;
     flex-flow:row wrap;
+    border: 10px solid; border-radius: 90px;padding:20px
 }
 .story {
     background-color:#a7fb15;
     margin: 2rem;
-    padding:2rem;
+    padding:5rem;
     padding-bottom: 5rem;
 }
 .nav-links {
-    list-style-type: none;
+    list-style-type: center;
+    text-align: center;
 }
 .nav-links li {
     display:inline;
+    text-align: center;
 }
 .nav-links li:hover {
     background-color: #e25a6c;
@@ -48,4 +70,59 @@ header {
 .flier {
 	pointer-events: none;
 }
+.flier {
+	pointer-events: none;
+}
+/*the following css was taken from a website but if I need to remove it I can do that.*/
+.flier > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 90s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999999;
+}
 
+ /* Keyframe values control where the element will begin
+    and end its trajectory across the screen. Each rule
+    represents a path the element follows across the screen. */
+
+
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
